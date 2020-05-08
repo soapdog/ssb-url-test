@@ -1,0 +1,19 @@
+{
+    "description": "ssb url test",
+    "manifest_version": 2,
+    "name": "ssb-url-test",
+    "version": "1.0",
+   
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "protocol_handlers": [
+      {
+        "protocol": "ssb",
+        "name": "Secure Scuttlebutt",
+        "uriTemplate": "/index.html#%s"
+      }
+    ],
+    "permissions": [
+      "<all_urls>"
+    ]
+  }
+  
